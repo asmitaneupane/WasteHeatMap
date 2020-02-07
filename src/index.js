@@ -1,27 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import './css/index.css';
-import * as serviceWorker from './serviceWorker';
 import WasteMap from './WasteMap';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import * as serviceWorker from './serviceWorker';
+import form from './form';
+import './css/bootstrap.min.css';
+import Login from './login';
 import Homepage from './Homepage';
-import Menu from './Homepage';
-import UserProfile from './UserProfile';
+import Register from './register';
+// import Menu from './Menu';
+import Settings from './Settings';
+import User from './user';
 
 ReactDOM.render(
-    <Router>
-        < Menu />
-        <Switch>
-        
-        <Route exact path="/" name="homepage" component={Homepage} />
-        <Route path="/wastemap" name="wastemap" component={WasteMap} />
-        <Route path="/userprofile" name="userprofile" component={UserProfile}/>
-        
+    <div>
+        <Router>
+            <Homepage />
 
-        </Switch>
+            <Switch>
+                <Route exact path="/" name="wastemap" component={WasteMap} />
+                <Route exact path="/wastemap" name="wastemap" component={WasteMap} />
+                <Route path="/form" name="form" component={form} />
+                <Route path="/login" name="login" component={Login} />
+                <Route path="/register" name="register" component={Register} />
+                <Route path="/settings" name="settings" component={Settings} />
+                <Route path="/user" name="user" component={User} />
 
-    </Router>
 
-, document.getElementById('root'));
-
+            </Switch>
+        </Router>
+    </div>
+    , document.getElementById('root'));
 serviceWorker.unregister();

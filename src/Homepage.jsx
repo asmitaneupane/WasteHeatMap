@@ -13,7 +13,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import BusinessIcon from "@material-ui/icons/Business";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { Link } from "react-router-dom";
-import "./css/menu.css";
+import "./menu.css";
 
 export default function Menu() {
   const [state, setState] = React.useState({
@@ -41,12 +41,12 @@ export default function Menu() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        <Link to="/">
+        <Link to="/wastemap">
           <ListItem>
             <ListItemIcon>
               <MapIcon />
             </ListItemIcon>
-            <ListItemText><Link to="/wastemap">WasteMap</Link></ListItemText>
+            <ListItemText>Waste Map</ListItemText>
           </ListItem>
         </Link>
         <Divider />
@@ -55,7 +55,7 @@ export default function Menu() {
             <ListItemIcon>
               <PersonIcon />
             </ListItemIcon>
-            <ListItemText><Link to="/userprofile">User Profile</Link></ListItemText>
+            <ListItemText>User Profile</ListItemText>
           </ListItem>
         </Link>
         <Link to="/employeeform">
@@ -63,7 +63,7 @@ export default function Menu() {
             <ListItemIcon>
               <MailIcon />
             </ListItemIcon>
-            <ListItemText><Link to="/form">Employee Form</Link></ListItemText>
+            <ListItemText>Employee Form</ListItemText>
           </ListItem>
         </Link>
         <Divider />
@@ -72,16 +72,26 @@ export default function Menu() {
             <ListItemIcon>
               <BusinessIcon />
             </ListItemIcon>
-            <ListItemText><Link to="/ecommercesite">ECommerce Site</Link></ListItemText>
+            <ListItemText>ECommerce Site</ListItemText>
           </ListItem>
         </Link>
         <Divider />
+        <Link to="/user">
+          <ListItem>
+            <ListItemIcon>
+              <BusinessIcon />
+            </ListItemIcon>
+            <ListItemText>User</ListItemText>
+          </ListItem>
+        </Link>
+        <Divider />
+
         <Link to="/settings">
           <ListItem>
             <ListItemIcon>
               <SettingsIcon />
             </ListItemIcon>
-            <ListItemText><Link to="/settings">Settings</Link></ListItemText>
+            <ListItemText>Settings</ListItemText>
           </ListItem>
         </Link>
       </List>

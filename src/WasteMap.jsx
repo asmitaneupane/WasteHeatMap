@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import { Map, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import './css/wastemap.css';
 import data from "./waste.json";
 const positions = data.positions;
+
 
 class WasteMap extends Component {
     constructor() {
@@ -16,7 +18,8 @@ class WasteMap extends Component {
     render() {
         const position = [this.state.lat, this.state.lng];
         return (
-            <Map center={position} zoom={this.state.zoom}>
+            <div>
+                <Map center={position} zoom={this.state.zoom}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
@@ -30,6 +33,12 @@ class WasteMap extends Component {
                     ))
                 }
             </Map >
+            <br/>
+            <div>
+                <Button color="primary" >Get Location</Button>{' '}
+            </div>
+</div>            
+
 
         );
     }
