@@ -5,6 +5,10 @@ import {
   Button,
 } from 'reactstrap';
 import './css/login.css';
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> master
 
 class Login extends Component {
   render() {
@@ -36,6 +40,9 @@ class Login extends Component {
             </FormGroup>
           </Col>
           <Button>Submit</Button>
+          <br/>
+          <br/>
+          <div>Didn't <Link to="/register"> Register</Link> Yet?</div>
         </Form>
       </Container>
     );

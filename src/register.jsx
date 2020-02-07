@@ -4,6 +4,10 @@ import {
   FormGroup, FormText, Label, Input,
   Button,
 } from 'reactstrap';
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> master
 import './css/register.css';
 
 class Register extends Component {
@@ -46,9 +50,7 @@ class Register extends Component {
           <Button>Submit</Button>
         </Form>
         <h4>Already have an account?</h4>
-        <Button variant="primary" size="lg" block>
-                    Sign In
-        </Button> 
+        <Link to="/login"> Sign In </Link>
       </Container>
     );
   }
