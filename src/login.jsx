@@ -5,10 +5,7 @@ import {
   Button,
 } from 'reactstrap';
 import './css/login.css';
-<<<<<<< HEAD
-=======
 import { Link } from 'react-router-dom';
->>>>>>> master
 
 class Login extends Component {
   render() {

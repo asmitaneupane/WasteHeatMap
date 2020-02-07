@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-// import render from "react-dom";
-=======
 import { Button } from 'reactstrap';
->>>>>>> master
 import { Map, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import './css/wastemap.css';
 import data from "./waste.json";

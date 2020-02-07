@@ -4,10 +4,7 @@ import {
   FormGroup, FormText, Label, Input,
   Button,
 } from 'reactstrap';
-<<<<<<< HEAD
-=======
 import { Link } from 'react-router-dom';
->>>>>>> master
 import './css/register.css';
 
 class Register extends Component {
