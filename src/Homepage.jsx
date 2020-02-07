@@ -13,7 +13,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import BusinessIcon from "@material-ui/icons/Business";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { Link } from "react-router-dom";
-import "./menu.css";
+import "./css/menu.css";
 
 export default function Menu() {
   const [state, setState] = React.useState({
