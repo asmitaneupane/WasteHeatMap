@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imgName": "plastic_bag",
+      "title": "Toothpast Plastic Bag",
+      "description": "Toothpast Plastic Bag",
+      "price": 10
+    },
+
+    {
+      "id": 2,
+      "imgName": "pen_bottles",
+      "title": "Bottles Pens Holder",
+      "description": "Bottles Pens Holder",
+      "price": 14.9
+    },
+
+    {
+      "id": 3,
+      "imgName": "pen_cups",
+      "title": "Plastic Pen Holder",
+      "description": "Plastic Pen Holder",
+      "price": 14.9
+    },
+
+    {
+      "id": 4,
+      "imgName": "plastic_basket",
+      "title": "Plastic Basket",
+      "description": "Plastic Basket",
+      "price": 14.9
+    },
+
+    {
+      "id": 5,
+      "imgName": "plastic_chairs",
+      "title": "Plastic Chairs",
+      "description": "Plastic Chairs",
+      "price": 14.9
+    },
+
+    {
+      "id": 6,
+      "imgName": "recycle_shoes",
+      "title": "Bottles Pens Holder",
+      "description": "Bottles Pens Holder",
+      "price": 14.9
+    },
+
+    {
+      "id": 7,
+      "imgName": "yoga_mat",
+      "title": "Plastic Yoga Mats",
+      "description": "Plastic Yoga Mats",
+      "price": 14.9
+    },
+    {
+      "id": 8,
+      "imgName": "plastic_bag",
+      "title": "Toothpast Plastic Bag",
+      "description": "Toothpast Plastic Bag",
+      "price": 10
+    },
+
+    {
+      "id": 9,
+      "imgName": "pen_bottles",
+      "title": "Bottles Pens Holder",
+      "description": "Bottles Pens Holder",
+      "price": 14.9
+    },
+
+    {
+      "id": 10,
+      "imgName": "pen_cups",
+      "title": "Plastic Pen Holder",
+      "description": "Plastic Pen Holder",
+      "price": 14.9
+    },
+
+    {
+      "id": 11,
+      "imgName": "plastic_basket",
+      "title": "Plastic Basket",
+      "description": "Plastic Basket",
+      "price": 14.9
+    },
+
+    {
+      "id": 12,
+      "imgName": "plastic_chairs",
+      "title": "Plastic Chairs",
+      "description": "Plastic Chairs",
+      "price": 14.9
+    },
+
+    {
+      "id": 13,
+      "imgName": "recycle_shoes",
+      "title": "Bottles Pens Holder",
+      "description": "Bottles Pens Holder",
+      "price": 14.9
+    },
+
+    {
+      "id": 14,
+      "imgName": "yoga_mat",
+      "title": "Plastic Yoga Mats",
+      "description": "Plastic Yoga Mats",
+      "price": 14.9
+    }
+  ]
+}
