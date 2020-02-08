@@ -20,7 +20,6 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" name="wastemap" component={WasteMap} />
                 <Route exact path="/wastemap" name="wastemap" component={WasteMap} />
-                <Route path="/form" name="form" component={form} />
                 <Route path="/login" name="login" component={Login} />
                 <Route path="/register" name="register" component={Register} />
                 <Route path="/settings" name="settings" component={Settings} />

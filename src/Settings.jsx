@@ -46,7 +46,6 @@ class Settings extends Component {
                        <center><Button color="primary">Signout</Button></center> 
 
                     </Form>
-                    <p>Data & Permission</p>
                 </Container>
             </div >
         )

@@ -50,14 +50,6 @@ export default function Menu() {
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/employeeform">
-          <ListItem>
-            <ListItemIcon>
-              <MailIcon />
-            </ListItemIcon>
-            <ListItemText>Employee Form</ListItemText>
-          </ListItem>
-        </Link>
         <Divider />
         <Link to="/ecommercesite">
           <ListItem>
