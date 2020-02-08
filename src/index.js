@@ -12,6 +12,7 @@ import User from './user';
 import Ecommercesite from './ecommercesite';
 import Addwaste from './Addwaste';
 import Getlocation from './Getlocation';
+import Welcome from './Welcome';
 
 ReactDOM.render(
     <div>
@@ -19,8 +20,9 @@ ReactDOM.render(
             <Homepage />
 
             <Switch>
-                <Route exact path="/" name="register" component={Register} />
-                <Route exact path="/wastemap" name="wastemap" component={WasteMap} />
+                <Route exact path="/" name="welcome" component={Welcome} />
+                <Route path="/login" name="login" component={Login} />
+                <Route path="/wastemap" name="wastemap" component={WasteMap} />
                 <Route path="/ecommercesite" name="ecommercesite" component={Ecommercesite} />
                 <Route path="/login" name="login" component={Login} />
                 <Route path="/register" name="register" component={Register} />
