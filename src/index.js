@@ -9,9 +9,9 @@ import Homepage from './Homepage';
 import Register from './register';
 import Settings from './Settings';
 import User from './user';
+import Ecommercesite from './ecommercesite';
 import Addwaste from './Addwaste';
 import Getlocation from './Getlocation';
-
 
 ReactDOM.render(
     <div>
@@ -21,6 +21,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" name="wastemap" component={WasteMap} />
                 <Route exact path="/wastemap" name="wastemap" component={WasteMap} />
+                <Route path="/ecommercesite" name="ecommercesite" component={Ecommercesite} />
                 <Route path="/login" name="login" component={Login} />
                 <Route path="/register" name="register" component={Register} />
                 <Route path="/settings" name="settings" component={Settings} />
