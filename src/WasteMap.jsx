@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import { Map, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import './css/wastemap.css';
+import { Link } from "react-router-dom";
 import data from "./waste.json";
 const positions = data.positions;
 
@@ -35,9 +36,16 @@ class WasteMap extends Component {
             </Map >
             <br/>
             <div>
-                <Button color="primary" >Get Location</Button>{' '}
+                <Button color="secondary" text-color="white">
+                <Link to="addwaste" className="text-white">Add Waste</Link></Button>{' '}
+
+                <Button color="secondary" text-color="white">
+                <Link to="getlocation" className="text-white">Get Location</Link></Button>{' '}
             </div>
-</div>            
+            
+            </div>
+            
+           
 
 
         );

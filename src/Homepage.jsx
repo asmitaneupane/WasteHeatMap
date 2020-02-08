@@ -7,7 +7,6 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
-import MailIcon from "@material-ui/icons/Mail";
 import MapIcon from "@material-ui/icons/Map";
 import PersonIcon from "@material-ui/icons/Person";
 import BusinessIcon from "@material-ui/icons/Business";
@@ -50,22 +49,6 @@ export default function Menu() {
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/userprofile">
-          <ListItem>
-            <ListItemIcon>
-              <PersonIcon />
-            </ListItemIcon>
-            <ListItemText>User Profile</ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="/employeeform">
-          <ListItem>
-            <ListItemIcon>
-              <MailIcon />
-            </ListItemIcon>
-            <ListItemText>Employee Form</ListItemText>
-          </ListItem>
-        </Link>
         <Divider />
         <Link to="/ecommercesite">
           <ListItem>
@@ -79,9 +62,9 @@ export default function Menu() {
         <Link to="/user">
           <ListItem>
             <ListItemIcon>
-              <BusinessIcon />
+              <PersonIcon />
             </ListItemIcon>
-            <ListItemText>User</ListItemText>
+            <ListItemText>User Profile</ListItemText>
           </ListItem>
         </Link>
         <Divider />

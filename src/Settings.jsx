@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import {
     Container, Col, Form,
-    FormGroup, FormText, Label, Input,
+    FormGroup, Label, Input,
     Button,
 } from 'reactstrap';
+import './css/settings.css';
 
 
 class Settings extends Component {
     render() {
         return (
             <div>
-                <h2>Settings</h2>
+                <center>Settings</center>
                 <Container className="Login">
                     <Form className="form">
                         <Col>
@@ -42,10 +43,9 @@ class Settings extends Component {
                                 />
                             </FormGroup>
                         </Col>
-                        <Button color="primary">Signout</Button>
+                       <center><Button color="primary">Signout</Button></center> 
 
                     </Form>
-                    <p>Data & Permission</p>
                 </Container>
             </div >
         )
