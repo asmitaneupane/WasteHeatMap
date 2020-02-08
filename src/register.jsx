@@ -11,8 +11,8 @@ class Register extends Component {
   render() {
     return (
       <Container className="Register">
-        <h2>Sign Up</h2>
-        <Form className="form">
+        <center><h2>Sign Up</h2></center>
+        <Form className="form" method="get">
           <Col>
             <FormGroup>
               <Label>Email</Label>
@@ -27,6 +27,46 @@ class Register extends Component {
           </Col>
           <Col>
             <FormGroup>
+              <Label for="">First Name</Label>
+              <Input
+                type="text"
+                name="fname"
+                id="firstname"
+                placeholder="Enter your First Name here"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="">Last Name</Label>
+              <Input
+                type="text"
+                name="lname"
+                id="lastname"
+                placeholder="Enter lastname"
+              />
+            </FormGroup>
+          </Col>
+          <Col>
+            <FormGroup>
+              <Label for="">Address</Label>
+              <Input
+                type="text"
+                name="address"
+                id="Address"
+                placeholder="Enter your Address here"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="">Phone</Label>
+              <Input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Enter your Phone Here"
+              />
+            </FormGroup>
+          </Col>
+          <Col>
+            <FormGroup>
               <Label for="examplePassword">Password</Label>
               <Input
                 type="password"
@@ -36,18 +76,20 @@ class Register extends Component {
               />
             </FormGroup>
             <FormGroup>
+              <Label for="examplePassword">Password</Label>
+
               <Input
                 type="password"
                 name="password"
                 id="examplePassword"
-                placeholder="Reenter your password"
+                placeholder="Confirm your password"
               />
             </FormGroup>
           </Col>
-          <Button>Submit</Button>
+          <center><Button color="Primary">Register</Button></center>
         </Form>
-        <h4>Already have an account?</h4>
-        <Link to="/login"> Sign In </Link>
+        <center><h4>Already have an account?</h4>
+          <Link to="/login"> Sign In </Link></center>
       </Container>
     );
   }

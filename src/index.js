@@ -19,7 +19,7 @@ ReactDOM.render(
             <Homepage />
 
             <Switch>
-                <Route exact path="/" name="wastemap" component={WasteMap} />
+                <Route exact path="/" name="register" component={Register} />
                 <Route exact path="/wastemap" name="wastemap" component={WasteMap} />
                 <Route path="/ecommercesite" name="ecommercesite" component={Ecommercesite} />
                 <Route path="/login" name="login" component={Login} />
