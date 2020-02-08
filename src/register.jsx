@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Container, Col, Form,
-  FormGroup, FormText, Label, Input,
+  FormGroup, Label, Input,
   Button,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -23,7 +23,6 @@ class Register extends Component {
                 placeholder="myemail@email.com"
               />
             </FormGroup>
-            <FormText>Your username is most likely your email.</FormText>
           </Col>
           <Col>
             <FormGroup>
@@ -76,7 +75,7 @@ class Register extends Component {
               />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">Password</Label>
+              <Label for="examplePassword">Confirm Password</Label>
 
               <Input
                 type="password"
