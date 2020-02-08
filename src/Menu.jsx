@@ -17,14 +17,14 @@ class Menu extends Component {
             <HamburgerMenu
                 isOpen={this.state.open}
                 menuClicked={this.handleClick.bind(this)}
-                width={18}
-                height={15}
-                strokeWidth={1}
+                width={20}
+                height={18}
+                strokeWidth={1.2}
                 rotate={0}
                 color='black'
                 borderRadius={0}
                 animationDuration={0.5}
-            >Hello</HamburgerMenu>
+            ></HamburgerMenu>
         </div>);
     }
 }

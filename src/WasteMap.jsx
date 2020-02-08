@@ -35,13 +35,14 @@ class WasteMap extends Component {
                 }
             </Map >
             <br/>
-            <div>
+            <center><div>
                 <Button color="secondary" text-color="white">
                 <Link to="addwaste" className="text-white">Add Waste</Link></Button>{' '}
 
                 <Button color="secondary" text-color="white">
                 <Link to="getlocation" className="text-white">Get Location</Link></Button>{' '}
             </div>
+            </center>
             
             </div>
             

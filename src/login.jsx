@@ -4,7 +4,6 @@ import {
   Col,
   Form,
   FormGroup,
-  FormText,
   Label,
   Input,
   Button
@@ -50,7 +49,7 @@ class Login extends Component {
     }
     return (
       <Container className="Login">
-        <h2>Sign In</h2>
+        <center><h2>Sign In</h2></center>
         <Form className="form">
           <Col>
             <FormGroup>
@@ -63,7 +62,6 @@ class Login extends Component {
                 onChange={this.onChange}
               />
             </FormGroup>
-            <FormText>Your username is most likely your email.</FormText>
           </Col>
           <Col>
             <FormGroup>
@@ -77,7 +75,7 @@ class Login extends Component {
               />
             </FormGroup>
           </Col>
-          <Button onClick={this.login}>Submit</Button>
+          <center><Button color="primary" onClick={this.login}>Submit</Button></center>
           <br />
           <br />
           <div>

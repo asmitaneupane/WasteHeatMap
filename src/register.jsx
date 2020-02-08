@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+<<<<<<< HEAD
   Container,
   Col,
   Form,
@@ -11,6 +12,14 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./css/register.css";
+=======
+  Container, Col, Form,
+  FormGroup, Label, Input,
+  Button,
+} from 'reactstrap';
+import { Link } from 'react-router-dom';
+import './css/register.css';
+>>>>>>> 389f8aff495783a931424d67cb9a3740b596214d
 
 class Register extends Component {
   render() {
@@ -30,7 +39,6 @@ class Register extends Component {
                 placeholder="myemail@email.com"
               />
             </FormGroup>
-            <FormText>Your username is most likely your email.</FormText>
           </Col>
           <Col>
             <FormGroup>
@@ -83,7 +91,7 @@ class Register extends Component {
               />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">Password</Label>
+              <Label for="examplePassword">Confirm Password</Label>
 
               <Input
                 type="password"
