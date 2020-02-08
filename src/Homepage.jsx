@@ -50,14 +50,6 @@ export default function Menu() {
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/userprofile">
-          <ListItem>
-            <ListItemIcon>
-              <PersonIcon />
-            </ListItemIcon>
-            <ListItemText>User Profile</ListItemText>
-          </ListItem>
-        </Link>
         <Link to="/employeeform">
           <ListItem>
             <ListItemIcon>
@@ -79,9 +71,9 @@ export default function Menu() {
         <Link to="/user">
           <ListItem>
             <ListItemIcon>
-              <BusinessIcon />
+              <PersonIcon />
             </ListItemIcon>
-            <ListItemText>User</ListItemText>
+            <ListItemText>User Profile</ListItemText>
           </ListItem>
         </Link>
         <Divider />
