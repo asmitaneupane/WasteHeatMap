@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
-  Container, Col, Form,
-  FormGroup, FormText, Label, Input,
-  Button,
-} from 'reactstrap';
-import { Link } from 'react-router-dom';
-import './css/register.css';
+  Container,
+  Col,
+  Form,
+  FormGroup,
+  FormText,
+  Label,
+  Input,
+  Button
+} from "reactstrap";
+import { Link } from "react-router-dom";
+import "./css/register.css";
 
 class Register extends Component {
   render() {
     return (
       <Container className="Register">
-        <center><h2>Sign Up</h2></center>
+        <center>
+          <h2>Sign Up</h2>
+        </center>
         <Form className="form" method="get">
           <Col>
             <FormGroup>
@@ -80,16 +87,22 @@ class Register extends Component {
 
               <Input
                 type="password"
-                name="password"
+                name="cpassword"
                 id="examplePassword"
                 placeholder="Confirm your password"
               />
             </FormGroup>
           </Col>
-          <center><Button color="Primary">Register</Button></center>
+          <center>
+            <Button color="Primary" id="register">
+              Register
+            </Button>
+          </center>
         </Form>
-        <center><h4>Already have an account?</h4>
-          <Link to="/login"> Sign In </Link></center>
+        <center>
+          <h4>Already have an account?</h4>
+          <Link to="/login"> Sign In </Link>
+        </center>
       </Container>
     );
   }

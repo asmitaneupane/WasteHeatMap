@@ -7,7 +7,7 @@ export function PostData(type, userdata) {
     })
       .then(response => response.json())
       .then(responseJson => {
-        resolve(responsegitJson);
+        resolve(responseJson);
       })
       .catch(error => {
         reject(error);
