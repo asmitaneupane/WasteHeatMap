@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import WasteMap from './WasteMap';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
-import form from './form';
 import './css/bootstrap.min.css';
 import Login from './login';
 import Homepage from './Homepage';
@@ -11,6 +10,8 @@ import Register from './register';
 import Settings from './Settings';
 import User from './user';
 import Addwaste from './Addwaste';
+import Getlocation from './Getlocation';
+
 
 ReactDOM.render(
     <div>
@@ -25,6 +26,7 @@ ReactDOM.render(
                 <Route path="/settings" name="settings" component={Settings} />
                 <Route path="/user" name="user" component={User} />
                 <Route path="/addwaste" name="addwaste" component={Addwaste} />
+                <Route path="/getlocation" name="getlocation" component={Getlocation} />
 
 
             </Switch>
