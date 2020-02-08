@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     Container, Col, Form,
-    FormGroup, FormText, Label, Input,
+    FormGroup, Label, Input,
     Button,
 } from 'reactstrap';
 import './css/settings.css';
