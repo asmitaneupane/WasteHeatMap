@@ -1,44 +1,33 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
-import {UsePositionDemo} from './Location';
-
+import { UsePositionDemo } from './Location';
+import Geolocation from 'react-geolocation';
 class Getlocation extends React.Component {
     render() {
         return (
-            <UsePositionDemo/>
+            <Geolocation
+                render={({
+                    position: { coords: { latitude, longitude } = {} } = {},
+                    error,
+                    getCurrentPosition
+                }) =>
+                    <div>
+                        <button onClick={getCurrentPosition}>Get Position</button>
+                        {
+                            error &&
+                            <div>
+                                {error.message}
+                            </div>
+                        }
+                        <pre>
+                            latitude: {latitude}
+                            longitude: {longitude}
+                        </pre>
+                    </div >
+                }
+            />
         )
-        // return !this.props.isGeolocationAvailable ? (
-        //     <div>Your browser does not support Geolocation</div>
-        // ) : !this.props.isGeolocationEnabled ? (
-        //     <div>Geolocation is not enabled</div>
-        // ) : this.props.coords ? (
-        //     <table>
-        //         <tbody>
-        //             <tr>
-        //                 <td>latitude</td>
-        //                 <td>{this.props.coords.latitude}</td>
-        //             </tr>
-        //             <tr>
-        //                 <td>longitude</td>
-        //                 <td>{this.props.coords.longitude}</td>
-        //             </tr>
-        //             <tr>
-        //                 <td>altitude</td>
-        //                 <td>{this.props.coords.altitude}</td>
-        //             </tr>
-        //             <tr>
-        //                 <td>heading</td>
-        //                 <td>{this.props.coords.heading}</td>
-        //             </tr>
-        //             <tr>
-        //                 <td>speed</td>
-        //                 <td>{this.props.coords.speed}</td>
-        //             </tr>
-        //         </tbody>
-        //     </table>
-        // ) : (
-        //                 <div>Getting the location data&hellip; </div>
-        //             );
+
     }
 }
 
