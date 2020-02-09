@@ -1,25 +1,15 @@
 import React, { Component } from "react";
 import {
-<<<<<<< HEAD
   Container,
   Col,
   Form,
   FormGroup,
-  FormText,
   Label,
   Input,
   Button
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./css/register.css";
-=======
-  Container, Col, Form,
-  FormGroup, Label, Input,
-  Button,
-} from 'reactstrap';
-import { Link } from 'react-router-dom';
-import './css/register.css';
->>>>>>> 389f8aff495783a931424d67cb9a3740b596214d
 
 class Register extends Component {
   render() {

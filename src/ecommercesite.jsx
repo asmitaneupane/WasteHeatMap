@@ -11,13 +11,13 @@ class Ecommercesite extends Component {
     this.handleRemoveFromCart = this.handleRemoveFromCart.bind(this);
   }
   componentWillMount() {
-    fetch("http://localhost:8081/products")
+    fetch("http://localhost:8000/products")
       .then(res => res.json())
       .then(data =>
         this.setState({
           products: data,
           filteredProducts: data
-        }).catch(console.log)
+        })
       );
     if (localStorage.getItem("cartItems")) {
       this.setState({

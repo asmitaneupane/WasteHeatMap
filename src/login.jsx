@@ -49,7 +49,9 @@ class Login extends Component {
     }
     return (
       <Container className="Login">
-        <center><h2>Sign In</h2></center>
+        <center>
+          <h2>Sign In</h2>
+        </center>
         <Form className="form">
           <Col>
             <FormGroup>
@@ -75,7 +77,11 @@ class Login extends Component {
               />
             </FormGroup>
           </Col>
-          <center><Button color="primary" onClick={this.login}>Submit</Button></center>
+          <center>
+            <Button color="primary" onClick={this.login}>
+              Submit
+            </Button>
+          </center>
           <br />
           <br />
           <div>

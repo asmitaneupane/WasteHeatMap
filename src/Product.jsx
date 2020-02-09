@@ -6,14 +6,11 @@ export default class Products extends Component {
       <div className="col-md-4">
         <div className="thumbnail text-center">
           <a
-            href={`#${product.pro_id}`}
+            href={`#${product.id}`}
             onClick={e => this.props.handleAddToCart(e, product)}
           >
-            <img
-              src={`./assets/${product.img_name}.jpg`}
-              alt={product.pro_title}
-            />
-            <p>{product.pro_title}</p>
+            <img src={`./assets/${product.imgName}.jpg`} alt={product.title} />
+            <p>{product.title}</p>
           </a>
           <div>
             <b>${product.price} </b>

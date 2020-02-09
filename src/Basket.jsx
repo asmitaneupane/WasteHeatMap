@@ -30,7 +30,7 @@ export default class Basket extends Component {
             <br />
             <button
               className="btn btn-primary"
-              onClick={() => alert("Checkout needs to implement....")}
+              onClick={() => alert("Checkout !!")}
             >
               Checkout
             </button>
