@@ -21,6 +21,7 @@ ReactDOM.render(
     <HashRouter history={hist}>
         <Homepage />
         <Switch>
+            <Route exact path="/" name="wastemap" component={WasteMap} />
             <Route path="/login" name="login" component={Login} />
             <Route path="/wastemap" name="wastemap" component={WasteMap} />
             <Route path="/ecommercesite" name="ecommercesite" component={Ecommercesite} />
@@ -30,7 +31,6 @@ ReactDOM.render(
             <Route path="/user" name="user" component={User} />
             <Route path="/addwaste" name="addwaste" component={Addwaste} />
             <Route path="/getlocation" name="getlocation" component={Getlocation} />
-            <Route exact path="/" name="wastemap" component={WasteMap} />
         </Switch>
     </HashRouter>
     , document.getElementById('root'));
