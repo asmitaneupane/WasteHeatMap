@@ -17,6 +17,7 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-geolocated": "^3.0.1",
+    "react-geolocation": "^1.0.4",
     "react-hamburger-menu": "^1.1.1",
     "react-html5-camera-photo": "^1.5.4",
     "react-leaflet": "^2.6.1",
