@@ -7,6 +7,7 @@ import WasteMap from './WasteMap';
 import Homepage from './Homepage';
 import Menu from './Homepage';
 import UserProfile from './UserProfile';
+import Form from './Form';
 
 ReactDOM.render(
     <Router>
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route exact path="/" name="homepage" component={Homepage} />
         <Route path="/wastemap" name="wastemap" component={WasteMap} />
         <Route path="/userprofile" name="userprofile" component={UserProfile}/>
+        <Route path="/form" name="Form" component={Form} />
         
 
         </Switch>
